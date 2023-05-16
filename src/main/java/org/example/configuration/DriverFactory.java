@@ -22,6 +22,7 @@ public class DriverFactory {
     private static WebDriver createCleanChrome() {
         ChromeOptions options=new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
+        options.addArguments("--start-maximized");
         return new ChromeDriver(options);
     }
 }
